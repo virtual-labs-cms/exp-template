@@ -52,7 +52,7 @@ jobs:
     # This uses the "ad-m/github-push-action@master" action to push the changes to the "gh-pages" branch
     # This uses the "ORG_OWNER_GITHUB_TOKEN" secret as the GitHub token
     # The "force" option is set to true, which means that the push will overwrite any existing content in the "gh-pages" branch
-    - uses: ad-m/github-push-action@main
+    - uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.ORG_OWNER_GITHUB_TOKEN }}
         force: true
